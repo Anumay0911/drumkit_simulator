@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./bg_img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.sound {
+    background: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(0, 255, 170, 0.619);
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.sound:hover {
+    transform: scale(1.4);
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 7px 6px rgba(29, 126, 141, 0.8);
+    .key {
+        color: yellow;
+    }
+    .sound-name {
+        color: yellow;
+    }
+}
+
+.key {
+    color: aliceblue;
+    font-size: 24px;
+    transform: translate(0,-50%);
+}
+
+.sound-name {
+    color: aliceblue;
+    font-size: 10px;
+    transform: translate(0,-80%);
+}
+
+.playing {
+    transform: scale(1.4);
+    transition: all 0.13s;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 7px 6px rgba(29, 126, 141, 0.8);
+    .key {
+        color: yellow;
+    }
+    .sound-name {
+        color: yellow;
+    }
+}
